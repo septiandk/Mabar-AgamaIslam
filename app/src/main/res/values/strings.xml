@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mabar - Pendidikan Agama Islam</string>
+    <string name="profil_name">BSE</string>
+    <string name="text_hello">Selamat Datang</string>
+    <string name="mulai">Mulai</string>
+    <string name="book">Buku</string>
+    <string name="membaca">Mari Membaca</string>
+    <string name="about">Tentangku</string>
+    <string name="writing">Menulis</string>
+    <string name="menulis">Mari Belajar Menulis</string>
+    <string name="toko">Toko</string>
+    <string name="customize">Kreasikan Karaktermu</string>
+    <string name="community">Komunitas</string>
+    <string name="mate">Temukan Temanmu</string>
+</resources>

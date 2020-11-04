@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.book.dk.PAI.Menu"
+    android:background="@color/light"
+    >
+    <RelativeLayout
+        android:id="@+id/profile_base"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/bg_menu_v"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/iconutama" />
+
+
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/menu_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/profile_base"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/linkto_homeread"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="30dp"
+            android:background="@drawable/border_menu"
+            >
+
+            <ImageView
+                android:id="@+id/read_menu"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon1"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/title_book"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/read_menu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/book"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/subtitle_ticket"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_book"
+                android:layout_centerHorizontal="true"
+                android:text="@string/membaca"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/linkto_homewrite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="30dp"
+            android:background="@drawable/border_menu"
+            >
+
+            <ImageView
+                android:id="@+id/writing_menu"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon2"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/title_write"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writing_menu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/writing"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/subtitle_quiz"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_write"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menulis"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/linkto_homestore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="30dp"
+            android:background="@drawable/border_menu"
+            >
+
+            <ImageView
+                android:id="@+id/store_menu"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/title_store"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/store_menu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/toko"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/subtitle_store"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_store"
+                android:layout_centerHorizontal="true"
+                android:text="@string/customize"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/linkto_homecommunity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="30dp"
+            android:background="@drawable/border_menu"
+            >
+
+            <ImageView
+                android:id="@+id/community_menu"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_community" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/title_community"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/community_menu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/community"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subtitle_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_community"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-1dp"
+                android:text="@string/mate"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

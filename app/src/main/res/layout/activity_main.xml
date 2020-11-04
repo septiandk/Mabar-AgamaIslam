@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.book.dk.PAI.MainActivity"
+    android:orientation="vertical"
+
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/icon1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/iconutama"/>
+        <RelativeLayout
+            android:id="@+id/setutama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/icon1"
+            android:layout_centerHorizontal="true"
+            >
+                <TextView
+                    android:id="@+id/set1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buku"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff4e4e"
+                    />
+
+                <TextView
+                    android:id="@+id/set2"
+                    android:layout_toEndOf="@id/set1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sekolah"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffe24e"
+                    />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/setutama"
+            android:id="@+id/set3"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elektronik"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#4eb2ff"
+            />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright &#169;2018 Septian and Friends"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/progresBar1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_rectangle_btn"
+            android:layout_marginBottom="80dp"/>
+
+</RelativeLayout>
